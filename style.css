@@ -36,7 +36,7 @@ body{
     background-color: #38598b;
     color: #e7eaf6;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .container{
@@ -91,7 +91,7 @@ input[type="radio"]:checked + label > .box{
 .inputs > label{
     display: block;
 }
-input[type="tel"]{
+input[type="number"]{
     width: 120px;
     height: 30px;
     align-self: center;
