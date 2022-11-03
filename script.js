@@ -147,6 +147,15 @@ document.querySelectorAll('input[name="glc"]').forEach((elem)=>{
     });
 })
 
+//remove footer when inputbox selected.
+document.querySelector('input[type="tel"]').addEventListener('focus', function(){
+    document.querySelector('footer').style.display = 'none';
+})
+document.querySelector('input[type="tel"]').addEventListener('blur', function(){
+    document.querySelector('footer').style.display = 'initial';
+})
+
+
 
 //disable right click
 window.addEventListener('contextmenu', function (e) { 
