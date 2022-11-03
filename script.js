@@ -146,3 +146,9 @@ document.querySelectorAll('input[name="glc"]').forEach((elem)=>{
         calc();
     });
 })
+
+
+//disable right click
+window.addEventListener('contextmenu', function (e) { 
+    e.preventDefault(); 
+  }, false);
