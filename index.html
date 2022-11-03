@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>당뇨 혈당수치 변환기</title>
+</head>
+<body>
+    <div class="container">
+        <div class="lang">
+            <div class="kor">
+                <input type="radio" id="kor" name="lang" value="kor" checked>
+                <label for="kor">
+                    <img src="img/korea.png" alt="">
+                </label>
+            </div>
+            <div class="eng">
+                <input type="radio" id="eng" name="lang" value="eng">
+                <label for="eng">
+                    <img src="img/canada.png" alt="">
+                </label>
+            </div>
+        </div>
+        <h1>당뇨 혈당 수치 변환기</h1>
+        <div class="meal">
+            <div class="fpg">
+                    <input type="radio" id="fpg" name="glc" value='0' checked>
+                    <label for="fpg">
+                        <div class="firstbox box">
+                            <span>공복</span>
+                        </div>
+                    </label>
+            </div>
+            <div class="pp">
+                    <input type="radio" id="pp" name="glc" value="1">
+                    <label for="pp">
+                        <div class="secondbox box">
+                            <span>당75g 후 2시간 </span>
+                        </div>
+                    </label>
+            </div>
+        </div>
+        <div class="inputs">
+            <label for="glucose">
+                <input type="tel" id="glucose" 
+                name="glucose" placeholder="mg/dL 입력" maxlength="8">
+            </label>
+            <label for="change">
+                <input type="checkbox" id="change">
+                <div id="exchange">
+                    <img src="img/reload.png" alt="">
+                </div>
+            </label>
+        </div>
+        <div class="output">
+            <p id="final"></p>
+            <p id="interpret"></p>
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/refresh" title="refresh icons">Icons from dmitri13,</a>
+        <a href="https://www.flaticon.com/free-icons/canada" title="canada icons">Freepik, </a>
+        <a href="https://www.flaticon.com/free-icons/korea" title="korea icons">Good Ware - Flaticon</a>
+    </footer>
+</body>
+</html>
